@@ -13,19 +13,23 @@ body {
 
 .wrapper {
   position: relative;
-  width: 1100px;
   margin: 0 auto;
 }
 
 .header {
-  display: block;
   background-color: #FFF;
+  display: block;
   position: fixed;
+  width: 100%;
   top: 0;
+  z-index: 1;
+}
+
+.header_contents {
   width: 1100px;
+  margin: 0 auto;
   padding: 15px 10%;
   box-sizing: border-box;
-  z-index: 1;
 }
 
 .button_effect {
@@ -41,7 +45,7 @@ body {
 }
 
 .fa-bolt {
-  font-size: 43px;
+  font-size: 45px;
   color: #777;
 }
 
@@ -53,10 +57,17 @@ body {
   color:#fff;
 }
 
-.Bolt_Theme_contents {
+.Bolt_Theme {
+  width: 100%;
   background-color: #f2f2f2;
+  margin-top: 75px;
+}
+
+.Bolt_Theme_contents {
   padding: 250px 0px;
   text-align: center;
+  width: 1100px;
+  margin: 0 auto;
 }
 
 .Bolt_Theme_title {
@@ -75,6 +86,11 @@ body {
   background-color: #74cfae;
   padding-top: 20px;
   width: 100%;
+}
+
+.what_we_can_do_contents {
+  width: 1100px;
+  margin: 0 auto;
 }
 
 .iphone_image {
@@ -118,6 +134,7 @@ body {
 
 .our_latest_work_contents {
   width: 1100px;
+  margin: 0 auto;
 }
 
 .up_box {
@@ -183,7 +200,7 @@ body {
 }
 
 .circle_image_parent {
-  width: 95%;
+  width: 1100px;
   margin: 0 auto;
 }
 
@@ -203,15 +220,20 @@ body {
   font-family: Late;
  }
 
- .sns_contents {
+ .sns_area {
   background-color: #f2f2f2;
   padding: 200px 0;
   width: 100%;
  }
 
- .icon_box_parent {
-  width: 70%;
+ .icon_contents {
+  width: 1100px;
   margin: 0 auto;
+  text-align: center;
+ }
+
+ .icon_box_parent {
+  display: inline-block;
  }
 
 .icon_box {
@@ -244,7 +266,7 @@ body {
 .footer_text {
   text-align: right;
   color: #fff;
-  width: 80%;
+  width: 1100px;
   margin: 0 auto;
   font-family: Late;
 }
