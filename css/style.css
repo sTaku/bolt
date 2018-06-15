@@ -2,6 +2,7 @@
 
 body {
   font-family: Raleway;
+  min-width: 1100px;
 }
 
 .clearfix:before,
@@ -22,13 +23,14 @@ body {
   position: fixed;
   width: 100%;
   top: 0;
+  overflow-x: auto;
   z-index: 1;
 }
 
 .header_contents {
   width: 1100px;
   margin: 0 auto;
-  padding: 15px 10%;
+  padding: 15px 0;
   box-sizing: border-box;
 }
 
@@ -199,9 +201,14 @@ body {
   font-size: 24px;
 }
 
-.circle_image_parent {
+.circle_image_contents {
   width: 1100px;
   margin: 0 auto;
+  text-align: center;
+}
+
+.circle_image_parent {
+  display: inline-block;
 }
 
 .circle_image {
