@@ -2,11 +2,18 @@
 
 body {
   font-family: Raleway;
-  min-width: 1100px;
+}
+
+main {
+  margin-top: 75px;
 }
 
 li {
   list-style: none;
+}
+
+img {
+  vertical-align: bottom;
 }
 
 .clearfix:before,
@@ -18,7 +25,7 @@ li {
 
 .wrapper {
   position: relative;
-  margin: 0 auto;
+  min-width: 1100px;
 }
 
 .header {
@@ -43,8 +50,6 @@ li {
 
 .button_effect {
   transition: 0.3s;
-  border-style: none;
-  outline: none;
 }
 
 .button_effect:hover {
@@ -69,7 +74,6 @@ li {
 .bolt_theme_contents {
   width: 100%;
   background-color: #f2f2f2;
-  margin-top: 75px;
 }
 
 .bolt_theme_inner {
@@ -89,7 +93,7 @@ li {
   margin-top: 20px;
 }
 
-.can_do_contents {
+.can_do_about_contents {
   background-color: #74cfae;
   padding-top: 50px;
   width: 100%;
@@ -99,20 +103,21 @@ li {
   float: left;
 }
 
-.can_do_section {
+.can_do_about_section {
   float: right;
+  display: inline-block;
   color: #fff;
   text-align: center;
-  width: 70%;
   line-height: 30px;
   margin-top: 25px;
+  width: 70%;
 }
 
-.can_do_section > h2 {
+.can_do_about_section > h2 {
   font-size: 24px;
 }
 
-.can_do_section > p {
+.can_do_about_section > p {
   font-size: 20px;
   margin-top: 35px;
   word-wrap: break-word;
@@ -133,14 +138,6 @@ li {
   color: #333;
 }
 
-.up_box {
-  margin-bottom: 80px;
-}
-
-.down_box {
-  margin-bottom: 90px;
-}
-
 .common_image {
   float: left;
   margin-right: 100px;
@@ -149,20 +146,23 @@ li {
 }
 
 .common_image:hover {
-  cursor: pointer;
   transition: 0.3s;
   opacity: 1
 }
 
-.box_image_parent a:nth-child(3),
-.box_image_parent a:nth-child(6) {
+.work_image_list li>a:nth-child(3n) {
   margin-right: 0;
+}
+
+.work_image_list li>a:nth-child(-n + 3) {
+  margin-bottom: 80px;
 }
 
 .work_comment {
   width: 80%;
   text-align: center;
-  margin: 0 auto;
+  margin: 90px auto 0;
+  font-size: 0px;
 }
 
 .work_comment_text {
@@ -172,6 +172,7 @@ li {
   color: #333;
   margin-right: 90px;
   font-family: Late;
+  font-size: 16px;
 }
 
 .email_botton {
@@ -182,7 +183,7 @@ li {
   font-size: 12px;
 }
 
-.our_skill_contents {
+.skill_contents {
   background-color: #4e4e4e;
   padding-top: 70px;
   padding-bottom: 100px;
@@ -190,13 +191,13 @@ li {
   text-align: center;
 }
 
-.our_skill_text {
+.skill_text {
   margin-bottom: 70px;
   color: #fff;
   font-size: 24px;
 }
 
-.circle_image_parent {
+.skill_image_list {
   display: inline-block;
 }
 
@@ -226,7 +227,7 @@ li {
   text-align: center;
  }
 
- .icon_box_parent {
+ .icon_box_list {
   display: inline-block;
  }
 
@@ -239,7 +240,6 @@ li {
 }
 
 .icon_box:hover {
-  cursor: pointer;
   background-color: #fff;
   transition: 0.3s;
 }
