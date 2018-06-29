@@ -63,7 +63,7 @@ img {
     font-weight: 700;
   }
 
-  .bolt_theme_title > br {
+  .new_line {
     display: none;
   }
 
@@ -199,7 +199,7 @@ img {
     font-weight: 700;
   }
 
-  .bolt_theme_title > br {
+  .new_line {
     display: none;
   }
 
@@ -305,8 +305,6 @@ img {
   .nav_toggle {
     display: block;
     float: right;
-    right: 20px;
-    top: 15px;
     width: 30px;
     padding: 10px;
     border: 1px solid #ddd;
@@ -338,8 +336,7 @@ img {
   .contact_button > hr {
     border-color: #ddd;
     margin: 0px;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin: 5px 0;
   }
 
   .contact_button > ul {
