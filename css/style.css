@@ -36,14 +36,17 @@ img {
     box-sizing: border-box;
   }
 
-
+  .nav_toggle {
+    display: none;
+  }
 
   .contact_button {
     float: right;
+    display: inline-block;
     background-color: #74cfae;
     font-size: 12px;
-    padding: 14px 12px;
   }
+
 
   .contact_button > hr{
     display: none;
@@ -60,8 +63,14 @@ img {
     font-weight: 700;
   }
 
+  .bolt_theme_title > br {
+    display: none;
+  }
+
   .iphone_image {
     float: left;
+    width: 40%;
+    text-align: center;
   }
 
   .about_section {
@@ -70,7 +79,7 @@ img {
     color: #fff;
     text-align: center;
     line-height: 30px;
-    margin-top: 25px;
+    padding-top: 25px;
     width: 60%;
   }
 
@@ -108,8 +117,6 @@ img {
     display: inline-block;
     vertical-align: middle;
     background-color: #74cfae;
-    padding: 14px 20px;
-    color: #fff;
     font-size: 12px;
   }
 
@@ -167,19 +174,21 @@ img {
     box-sizing: border-box;
   }
 
+  .nav_toggle {
+    display: none;
+  }
 
   .contact_button {
     float: right;
     background-color: #74cfae;
     font-size: 12px;
-    padding: 14px 12px;
   }
 
   .contact_button > hr{
     display: none;
   }
 
-    .bolt_theme_inner {
+  .bolt_theme_inner {
     padding: 250px 0px;
     text-align: center;
   }
@@ -190,12 +199,16 @@ img {
     font-weight: 700;
   }
 
+  .bolt_theme_title > br {
+    display: none;
+  }
+
   .about_contents {
     padding-bottom: 25px;
   }
 
   .iphone_image {
-  text-align: center;
+    text-align: center;
   }
 
   .about_section {
@@ -214,6 +227,10 @@ img {
     margin-bottom: 80px;
   }
 
+  .work_image_list > li:last-child {
+    margin-bottom: 0px;
+  }
+
   .work_comment {
     text-align: center;
     margin: 90px auto 0;
@@ -222,7 +239,7 @@ img {
 
   .work_comment_text {
     color: #333;
-    width: 800px;
+    width: 85%;
     font-family: Lato;
     font-size: 16px;
     margin:0 auto 40px;
@@ -232,14 +249,16 @@ img {
     display: inline-block;
     vertical-align: middle;
     background-color: #74cfae;
-    padding: 14px 20px;
-    color: #fff;
     font-size: 12px;
   }
 
   .skill_list > li {
     text-align: center;
     margin-bottom: 88px;
+  }
+
+  .skill_list > li:last-child {
+    margin-bottom: 0px;
   }
 
   .sns_contents {
@@ -284,7 +303,8 @@ img {
   }
 
   .nav_toggle {
-    position: fixed;
+    display: block;
+    float: right;
     right: 20px;
     top: 15px;
     width: 30px;
@@ -317,12 +337,14 @@ img {
 
   .contact_button > hr {
     border-color: #ddd;
+    margin: 0px;
+    margin-top: 5px;
+    margin-bottom: 5px;
   }
 
   .contact_button > ul {
     background-color: #74cfae;
     font-size: 12px;
-    padding: 14px 12px;
   }
 
   .bolt_theme_inner {
@@ -334,7 +356,7 @@ img {
     color: #74cfae;
     font-size: 80px;
     font-weight: 700;
-    width: 280px;
+    width: 80%;
     margin: 0 auto;
   }
 
@@ -348,19 +370,19 @@ img {
   }
 
   .iphone_image {
-  text-align: center;
+    text-align: center;
   }
 
   .about_section {
     color: #fff;
     text-align: center;
     line-height: 30px;
-    width: 100%;
+    width: 95%;
     margin: 20px auto 0px;
   }
 
   .about_section > p {
-    width: 345px;
+    width: 80%;
     margin: 0 auto;
   }
 
@@ -372,6 +394,11 @@ img {
     margin-bottom: 80px;
   }
 
+  .work_image_list > li:last-child {
+    margin-bottom: 0px;
+  }
+
+
   .work_comment {
     text-align: center;
     margin: 90px auto 0;
@@ -380,24 +407,26 @@ img {
 
   .work_comment_text {
     color: #333;
-    width: 280px;
     font-family: Lato;
     font-size: 16px;
     margin:0 auto 40px;
+    width: 80%;
   }
 
   .email_botton {
     display: inline-block;
     vertical-align: middle;
     background-color: #74cfae;
-    padding: 14px 20px;
-    color: #fff;
     font-size: 12px;
   }
 
   .skill_list > li {
     text-align: center;
     margin-bottom: 88px;
+  }
+
+  .skill_list > li:last-child {
+    margin-bottom: 0px;
   }
 
   .sns_contents {
@@ -407,11 +436,11 @@ img {
   }
 
   .icon_box {
-  display: block;
-  width: 100%;
-  padding: 35px 0;
-  text-align: center;
-  transition: 0.3s;
+    display: block;
+    width: 100%;
+    padding: 35px 0;
+    text-align: center;
+    transition: 0.3s;
   }
 
 }
@@ -427,20 +456,22 @@ img {
   z-index: 1;
 }
 
-  .fa-bolt {
-    font-size: 45px;
-    color: #777;
-  }
+.fa-bolt {
+  font-size: 45px;
+  color: #777;
+}
 
-  .button_effect {
-    text-decoration: none;
-    transition: 0.3s;
-    color:#fff;
-  }
+.button_effect {
+  text-decoration: none;
+  transition: 0.3s;
+  color:#fff;
+  display: inline-block;
+  padding: 14px 12px;
+}
 
-  .button_effect:hover {
-    transition: 0.3s;
-    color: #333;
+.button_effect:hover {
+  transition: 0.3s;
+  color: #333;
   }
 
 .main {
